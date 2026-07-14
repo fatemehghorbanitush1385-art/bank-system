@@ -69,3 +69,16 @@ class Account:
             "balance": self.balance,
             "transactions": self.transactions
         }
+    def export_transactions_to_csv(self, filename):
+        """صادرات تراکنش‌ها به CSV"""
+        import csv
+        with open(filename, 'w', newline='', encoding='utf-8') as f:
+            writer = csv.writer(f)
+            writer.writerow(['Date', 'Type', 'Amount', 'Balance'])
+            for trans in self.transactions:
+                writer.writerow([
+                    trans['date'],
+                    trans['type'],
+                    trans['amount'],
+                    trans['balance_after']
+                ])
