@@ -1,0 +1,29 @@
+[
+  {
+    "account_number": "1234",
+    "owner": "gndftghs",
+    "password": "1234",
+    "balance": 0,
+    "transactions": []
+  },
+  {
+    "account_number": "1234567890",
+    "owner": "jeyran",
+    "password": "1234",
+    "balance": 2434567,
+    "transactions": [
+      {
+        "type": "deposit",
+        "amount": 1200000,
+        "date": "2026-07-12 15:55:46",
+        "balance_after": 1200000
+      },
+      {
+        "type": "deposit",
+        "amount": 1234567,
+        "date": "2026-07-12 16:03:33",
+        "balance_after": 2434567
+      }
+    ]
+  }
+]
