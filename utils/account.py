@@ -69,6 +69,12 @@ class Account:
             "balance": self.balance,
             "transactions": self.transactions
         }
+    def notify_transaction(self, message):
+        """ارسال اطلاع‌رسانی برای تراکنش"""
+        notification = f"📧 {message}"
+        print(notification)
+        return True
+    
     def export_transactions_to_csv(self, filename):
         """صادرات تراکنش‌ها به CSV"""
         import csv
